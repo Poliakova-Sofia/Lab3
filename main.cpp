@@ -17,7 +17,7 @@ int main () { // menu for moving between tasks
     int menu; // diclaration of the variable
     cout << "      *** Menu ***     " << endl;
     cout << " Task number: ";
-    cin >> menu; // output the task number
+    cin >> menu; // input the task number
     switch (menu)
     { // moving between tasks
         case 1: task_if3 (); break; // task_if3
@@ -33,7 +33,7 @@ void task_if3 () // calculation task_if3
     int num; // declaration of the variable 
     cout << "      *** if3 ***      " << endl;
     cout << " Integer number: ";  
-    cin >> num; // output number
+    cin >> num; // input number
      if (cin) { // condition if the number entered corretly 
         if (num > 0) { // number transformation
             num -= 8;
@@ -45,7 +45,7 @@ void task_if3 () // calculation task_if3
             num = 10;
         }
         cout << " After transformation: " << num << endl; 
-        // output tesult of the transformation
+        // output result of the transformation
     }
     else 
        cout << " Wrong integer! " << endl;
@@ -58,11 +58,11 @@ void task_geom35 () // calculation task_geom35
     bool ar1, ar2;
     cout << "      *** geom35 ***   " << endl;
     cout << " Input number of the radius: ";
-    cin >> r; // output number for the radius
+    cin >> r; // input number for the radius
     if (cin && r > 0) // condition if the number entered corretly
     {
       cout << " Input number of x and y: "; 
-      cin >> x >> y; // output numbers for x and y
+      cin >> x >> y; // input numbers for x and y
       // colculation
       xc = x - r / sqrt(2);
       yc = y - r / sqrt(2);
@@ -83,7 +83,7 @@ void task_sp35 () // calculation task_sp35
     const double pi = 3.14; // diclaration pi = 3.14
     cout << "      *** sp35 ***   " << endl;
     cout << " Input number of the radius: ";
-    cin >> r; // output number for the radius
+    cin >> r; // input number for the radius
     if (r > 0) // condition if the number entered corretly
     {
        r90 = (90.0*pi)/180.0; // convert degrees to radians
